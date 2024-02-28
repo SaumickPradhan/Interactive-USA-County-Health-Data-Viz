@@ -2,6 +2,13 @@ const attributes = {};
 let jsonData, csvData;
 
 
+window.onload = function() {
+  // Check if the current zoom level is not 150%, then suggest the user to zoom in
+  if (window.devicePixelRatio !== 1.5) {
+      alert("Please zoom the browser to 150% for optimal viewing experience.");
+  }
+};
+
 function resetAndZoom() {
   location.reload();
   document.body.style.zoom = "150%";
