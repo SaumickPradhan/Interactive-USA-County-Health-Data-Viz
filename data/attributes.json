@@ -1,0 +1,82 @@
+{
+    "poverty_perc": {
+        "color": "#e67a00",
+        "label": "Poverty (%)"
+        
+    },
+    "median_household_income": {
+        "color": "#6d6d12",
+        "label": "Median Household Income ($)"
+        
+    },
+    "education_less_than_high_school_percent": {
+        "color": "#ff6d33",
+        "label": "Education Less Than High School (%)"
+        
+    },
+    "air_quality": {
+        "color": "#1a1aff",
+        "label": "Air Quality (Index)"
+        
+    },
+    "park_access": {
+        "color": "#1f7a7a",
+        "label": "Park Access (Index)"
+        
+    },
+    "percent_inactive": {
+        "color": "#8B4513",
+        "label": "Inactive (%)"
+       
+    },
+    "percent_smoking": {
+        "color": "#A52A2A",
+        "label": "Smoking (%)"
+        
+    },
+    "urban_rural_status": {
+        "color": "#ff66b3",
+        "label": "County Category"
+        
+    },
+    "elderly_percentage": {
+        "color": "#5500ff",
+        "label": "Elderly (%)"
+        
+    },
+    "number_of_hospitals": {
+        "color": "#239023",
+        "label": "Hospitals (Number)"
+        
+    },
+    "number_of_primary_care_physicians": {
+        "color": "#2d8659",
+        "label": "Primary Care Physicians (Number)"
+        
+    },
+    "percent_no_heath_insurance": {
+        "color": "#004d00",
+        "label": "No Health Insurance (%)"
+        
+    },
+    "percent_high_blood_pressure": {
+        "color": "#e61919",
+        "label": "High Blood Pressure (%)"
+        
+    },
+    "percent_coronary_heart_disease": {
+        "color": "#961d1d",
+        "label": "Coronary Heart Disease (%)"
+        
+    },
+    "percent_stroke": {
+        "color": "#e65c00",
+        "label": "Stroke (%)"
+        
+    },
+    "percent_high_cholesterol": {
+        "color": "#cc0066",
+        "label": "High Cholesterol (%)"
+        
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USA County Health Visualization</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+  <body>
+    <svg height="5" width="5" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <defs>
+        <pattern id="lightstripe" patternUnits="userSpaceOnUse" width="5" height="5">
+          <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgogIDxyZWN0IHdpZHRoPSc1JyBoZWlnaHQ9JzUnIGZpbGw9J3doaXRlJy8+CiAgPHBhdGggZD0nTTAgNUw1IDBaTTYgNEw0IDZaTS0xIDFMMSAtMVonIHN0cm9rZT0nIzg4OCcgc3Ryb2tlLXdpZHRoPScxJy8+Cjwvc3ZnPg==" x="0" y="0" width="5" height="5"></image>
+        </pattern>
+      </defs>
+    </svg>
+    <main>
+      <div style="text-align: center;">
+        <div class="heading">
+        <h1>Interactive County Health Visualization</h1>
+        <h3>Presented by Saumick Pradhan</h3>
+        <p>
+          Data Sourced from the
+          <a href="https://www.cdc.gov/dhdsp/maps/atlas/index.htm">US Heart and Stroke Atlas</a>. 
+          </p>
+          <p>Libraries used:
+          <a href="https://d3js.org/">D3 JavaScript library</a> and <a href="https://github.com/topojson/us-atlas">TopoJson</a>
+        </p>
+      </div>
+     
+
+        <table style="margin: 0 auto;">
+          <tr>
+            <th style="list-style: none;">Category</th>
+            <th style="list-style: none;">Subcategories</th>
+          </tr>
+          <tr>
+            <td style="list-style: none; padding-left: 10px;">Economics</td>
+            <td>
+              <ul style="list-style: none; padding-left: 0;">
+                <li><span style="background-color: #e67a00; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -40px;"></span>Poverty Percent</li>
+                <li style="padding-left: 20px;"><span style="background-color: #6d6d12; width: 10px; height: 10px; display: inline-block; margin-right: 5px;"></span>Median household Income</li>
+                <li><span style="background-color: #ff6d33; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: 50px;"></span>High school completion Percent</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="list-style: none; padding-left: 10px;">Environment</td>
+            <td>
+              <ul style="list-style: none; padding-left: 0;">
+                <li><span style="background-color: #1a1aff; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -40px;"></span>Air quality Index</li>
+                <li><span style="background-color: #1f7a7a; width: 10px; height: 10px; display: inline-block; margin-right: 5px;margin-left: -25px;"></span>Park access Index</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="list-style: none; padding-left: 10px;">Behavioral factors</td>
+            <td>
+              <ul style="list-style: none; padding-left: 0;">
+                <li><span style="background-color: #8B4513; width: 10px; height: 10px; display: inline-block; margin-right: 5px;margin-left: -30px;"></span>Inactivity Percent</li>
+                <li><span style="background-color: #A52A2A; width: 10px; height: 10px; display: inline-block; margin-right: 5px;margin-left: -30px;"></span>Smoking Percent</li>
+                
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="list-style: none; padding-left: 10px;" >Demographics</td>
+            <td>
+              <ul style="list-style: none; padding-left: 100px;">
+                <li><span style="background-color: #5500ff; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -140px;"></span>Elderly Percent</li>
+                <li><span style="background-color: #ff66b3; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: 60px;"></span>County Category (rural/urban/suburban/small city)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="list-style: none; padding-left: 10px;">Health care</td>
+            <td>
+              <ul style="list-style: none; padding-left: 100px;">
+                <li style="padding-left: 20px;"><span style="background-color: #239023; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -140px;"></span>Hospitals Number</li>
+                <li style="padding-left: 20px;"><span style="background-color: #2d8659; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -55px;"></span>Primary care Physicians Number</li>
+                <li><span style="background-color: #004d00; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -60px;"></span>No Health Insurance Percent</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td style="list-style: none; padding-left: 0px;">Health</td>
+            <td>
+              <ul style="list-style: none; padding-left: 100px;">
+                <li><span style="background-color: #e61919; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -60px;"></span>High Blood Pressure Percent</li>
+                <li><span style="background-color: #961d1d; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -45px;"></span>Coronary heart disease Percent</li>
+                <li><span style="background-color: #e65c00; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -143px;"></span>Stroke Percent</li>
+                <li><span style="background-color: #cc0066; width: 10px; height: 10px; display: inline-block; margin-right: 5px; margin-left: -87px;"></span>High cholesterol Percent</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <button onclick="resetAndZoom()">RESET</button>
+      </div>
+      
+      <div class="Charts" style="text-align: center; padding-bottom: 20px;"><h2>Compare Distributions of Counties for Selected Attributes</h2> </div>
+
+      <div class="visualization">
+        <div class="visualization-section">
+          <div class="attribute-select">
+            <label for="select-attribute-1">Select Attribute 1:</label>
+            <select name="select-attribute-1" id="select-attribute-1"></select>
+          </div>
+          <div id="histogram1"></div>
+          <div id="barchart1" style="display: none"></div>
+        </div>
+        
+        <div class="visualization-section">
+          <div class="attribute-select">
+            <label for="select-attribute-2">Select Attribute 2:</label>
+            <select name="select-attribute-2" id="select-attribute-2"></select>
+          </div>
+          <div id="histogram2"></div>
+          <div id="barchart2" style="display: none"></div>
+          
+        </div>
+        
+        <div class="visualization-section">
+          <div class="Plots" style="text-align: center; padding-bottom: 0px;"><h2>Correlation between Selected Attributes</h2> </div>
+          <div id="scatterplot"></div>
+        </div>
+
+
+        <div class="visualization-section">
+          <div class="Maps" style="text-align: center; "><h2>Attributes Distributed Spatially in USA</h2> </div>
+        <div class="choropleth-container">
+          <div id="choropleth1" class="choropleth"></div>
+          <div id="choropleth2" class="choropleth"></div>
+        </div>
+      </div>
+      <div id="magnifyingGlass"></div>
+      <button id="toggleButton">Toggle Magnifying Glass</button>
+    
+    </div>
+
+    </main>
+
+
+
+    <script src="js/d3.v6.min.js"></script>
+    <script src="js/topojson.v3.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/histoBarChart.js"></script>
+    <script src="js/scatterplot.js"></script>
+    <script src="js/choropleth.js"></script>
+  </body>
+</html>
