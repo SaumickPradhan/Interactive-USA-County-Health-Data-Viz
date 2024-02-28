@@ -15,21 +15,17 @@ class Scatterplot {
   
     initVis() {
       const vis = this;
-    
-      // Create SVG element
       vis.svg = d3.select(vis.config.parentElement)
         .append("svg")
         .attr("width", vis.config.containerWidth + vis.config.margin.left + vis.config.margin.right)
         .attr("height", vis.config.containerHeight + vis.config.margin.top + vis.config.margin.bottom)
         .append("g")
         .attr("transform", `translate(${vis.config.margin.left},${vis.config.margin.top})`);
-    
-      // X-axis
+      // check this
       vis.xScale = d3.scaleLinear().range([0, vis.config.containerWidth]);
       vis.xAxis = vis.svg.append("g")
         .attr("transform", `translate(0,${vis.config.containerHeight})`);
     
-      // Y-axis
       vis.yScale = d3.scaleLinear().range([vis.config.containerHeight, 0]);
       vis.yAxis = vis.svg.append("g");
     
@@ -51,10 +47,7 @@ class Scatterplot {
       this.updateVis();
     }
   
- 
-
-
-
+    // Resource: https://codesandbox.io/p/sandbox/github/UBC-InfoVis/2021-436V-examples/tree/master/d3-brushing-linking?file=%2Fjs%2FfocusContextVis.js%3A6086-6095
 
     updateVis() {
       const vis = this;
@@ -203,17 +196,18 @@ handleMouseOut = () => {
           );
   }
   
-  
+      //Resource: https://codesandbox.io/p/sandbox/github/UBC-InfoVis/2021-436V-examples/tree/master/d3-brushing-linking?file=%2Fjs%2FfocusContextVis.js%3A117%2C3-119%2C6
+
     brushed(area, vis) {
-      if (!area.sourceEvent) return; // Only transition after input
+      if (!area.sourceEvent) return; 
   
       const extent = area.selection;
   
       if (!extent) {
-        // Reset the counties filter (include them all)
+    
          countyFilter = [];
       } else {
-        // Filter the counties
+      
         const xRange = [vis.xScale.invert(extent[0][0]), vis.xScale.invert(extent[1][0])];
         const yRange = [vis.yScale.invert(extent[1][1]), vis.yScale.invert(extent[0][1])];
   
