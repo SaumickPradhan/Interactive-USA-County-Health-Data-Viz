@@ -173,7 +173,11 @@ Following are the attributes used:
 </details>
 
 
-1 section on what your application enables you to discover: Present some findings you arrive at with your application. 
+**Interesting Findings from the Application**
+
+
+
+**Application Architecture**
 
 
 1 section on your process- what libraries did you use?  How did you structure your code?  How can you access it and run it?  Link to your code (and the live application, if it is deployed online). 
