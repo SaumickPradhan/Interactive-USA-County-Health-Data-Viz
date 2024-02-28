@@ -26,7 +26,7 @@ const magnifyingGlass = document.getElementById('magnifyingGlass');
       magnifyingGlass.style.display = 'none';
     }
   });
-
+  //W3 schools
   document.addEventListener('mousemove', (event) => {
     if (isMagnifying) {
       const mouseX = event.clientX;
