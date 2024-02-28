@@ -1,6 +1,6 @@
 # Interactive-USA-County-Health-Data-Viz
 
-**An Interactive UI/UX for a conceptual Smart Table designed by Apple**
+**An Interactive Data Visualization Application to analyze the health, economics, environment, demographics, and healthcare across different counties in the United States**
 
 
 **Description**
@@ -31,6 +31,8 @@ Clone the repository
 ```
 git clone https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz.git
 ```
+
+Run the Application locally with localhost or using the deployment
 
 **Data Source**
 
@@ -175,17 +177,101 @@ Following are the attributes used:
 
 **Interesting Findings from the Application**
 
+<details>
+<summary><b>Relation between High school completion and smoking percent</b></summary>
+<b>It is interesting to note that higher that counties with higher number of High school dropouts have a relative higher number of smoking percent</b>
+<img width="681" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/9f8f7ff4-b72c-415d-87fa-84e4eb149591">
+</details>
+
+<details>
+<summary><b>Less Health Insurances in Texas</b></summary>
+  
+<b>Counties in Texas have less number of health insuraces as compared to other counties</b>
+  
+<img width="573" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/6e5d9d25-b291-4235-96d4-12b7dad80c13">
+</details>
+
+<details>
+<summary><b>Majority Rural counties</b></summary>
+<b>Majority of the counties are rural, especially in Central USA</b>
+  
+<img width="559" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/ed2d689b-023d-40b6-be4e-2c281ab58cdf">
+  <img width="614" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/fe69bbb1-405b-4a4f-a7cf-75cda321ded7">
+
+</details>
+
+
+<details>
+<summary><b>Park access Index</b></summary>
+<b>The western part of USA has a lot of Park access index. This sounds correct, given the vast open land and national parks in this area.</b>
+  
+<img width="573" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/6c030b71-1881-405a-9cdf-9d45617e5106">
+
+</details>
+
 
 
 **Application Architecture**
 
+<details>
+<summary><b>Libraries Used</b></summary>
+- [Javascript D3](https://d3js.org/)
+- [TopoJson](https://github.com/topojson/us-atlas)
+- Counties-10m.json for Choropleth maps
+</details>
 
-1 section on your process- what libraries did you use?  How did you structure your code?  How can you access it and run it?  Link to your code (and the live application, if it is deployed online). 
+<details>
+<summary><b>Directory Structure</b></summary>
+
+<b>Every .js file has class that we instantiate in main.js</b>
+  
+- CSS
+
+  - style.css: ALl the styling for index.html
+    
+- data
+
+  - attributes.json: All feature attributes stored here with color and label in json format
+ 
+  - counties-10m.json: Used in choropleth, from online resource.
+ 
+  - national_health_data.csv: Pre processed dataset
+    
+- js
+  
+  - choropleth.js: File with choropleth class and all its brushing and tooltip functions
+    
+  - d3.v6.min.js: D3 file
+    
+  - histoBarChart.js : File with class for combinedChart which helps create distribution charts based on attribute chart type and all its brushing and tooltip functions
+    
+  - main.js: The runner file for all .js classes. It does all the data preprocessing and object instantiation of classes. It also have error handling capabilities.
+    
+  - scatterplot.js: File with scatterplot class and all its brushing and tooltip functions
+    
+  - topojson.v3.js: Used for choropleth
+    
+index.html: Runner page
+
+README.md
 
 
-UPDATE: optional- perhaps you struggled with the project and learned a lot, but maybe there wasn't quite time to create the project you hoped to have.  It may feel like you don't have as much to write in your documentation, so you can include
-'future works' section where you describe what you wanted to do
-'challenges' section, where you describe what technical difficulties you encountered while doing this project, and reflect on how you might approach future projects.
+
+</details>
+
+
+
+<details>
+<summary><b>Future works</b></summary>
+<b>1. </b> Tracking changes in attributes for each type of county category
+
+<b>2. </b> Creating functions for brushing and tool tip for code resuability 
+
+<b>3. </b> Improve styling and spacing in the page
+  
+</details>
+
+
 
 
 
