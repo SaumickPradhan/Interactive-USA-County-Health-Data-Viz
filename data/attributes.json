@@ -11,7 +11,7 @@
     },
     "education_less_than_high_school_percent": {
         "color": "#ff6d33",
-        "label": "Education Less Than High School (%)"
+        "label": "High School Education Completion (%)"
         
     },
     "air_quality": {
