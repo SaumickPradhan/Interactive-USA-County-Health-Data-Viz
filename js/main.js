@@ -171,7 +171,7 @@ fetch('data/attributes.json')
 
 
 
-
+      // Resource: W3 schools onchange, Blackbox, chat gpt
       GlobalAttribute1.onchange = (event) => {
         const selectedAttr = event.target.value;
         const histogram1Element = document.getElementById("histogram1");
