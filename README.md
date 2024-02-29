@@ -3,7 +3,7 @@
 **An Interactive Data Visualization Application to analyze the health, economics, environment, demographics, and healthcare across different counties in the United States**
 
 
-**Description**
+<h2>Description</h2>
 
 Interactive-USA-County-Health-Data-Viz is a Javascript Interactive Data Viz Web application using D3 JavaScript library and TopoJson. The motivation behind the project is to provide a comprehensive and interactive tool for exploring and understanding various factors related to health, economics, environment, demographics, and healthcare across different counties in the United States. By using the data from the US Heart and Stroke Atlas, the project aims to offer insights into how multilpe factors interact with each other. It can be used to show the interdependence or independence of variour attributes and how it affects the society. 
 
@@ -11,14 +11,14 @@ We use chart distributions, correlations and spatial distributions to gain a dee
 
 
 
-**Video Presentation**
+<h2>Video Presentation</h2>
 https://youtu.be/8Fe_6UhcPd0
 
-**CHECK IT OUT**
+<h2>Check It Out</h2>
 [https://interactive-usa-county-health-data-viz.vercel.app/](https://interactive-usa-county-health-data-viz.vercel.app/)
 
 
-**Getting Started**
+<h2>Getting Started</h2>
 
 Navigate to your folder. Eg: for home directory
 
@@ -34,15 +34,14 @@ git clone https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-V
 
 Run the Application locally with localhost or using the deployment
 
-**Data Source**
+<h2>Data Source</h2>
 
 This data is pulled from the [US Heart and Stroke Atlas](https://www.cdc.gov/dhdsp/maps/atlas/index.htm).
 
 For this project, we have pulled the data together into a single file in ./data/national_health_data.csv
 
-Following are the attributes used:
-
-
+<details>
+<summary><b>Following are the attributes used:</b></summary>
 
 | Attribute                              | Explanation                                                                                       |
 |----------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -66,12 +65,24 @@ Following are the attributes used:
 | percent_high_cholesterol              | Prevalence of high cholesterol levels within the population.                                       |
 
 
+</details>
 
 
-1 section on any sketches that you used to help design your visualization environment.  (optional- we haven't practiced sketching in class, yet)
+<details><summary><b>Sketches</b></summary>
+
+<img width="576" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/0efe1f39-4642-4270-9ab7-b82ae66560f7">
+
+<img width="515" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/5b630b87-3bb9-4f94-a13e-8c22a2300c3e">
+
+<img width="523" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/c6384707-3d60-47bf-b364-fd05bb45e035">
+
+<img width="516" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/a97e5331-ddb6-4025-ba79-285c06e835e8">
+
+</details>
 
 
-**Visualization components**
+
+<h2>Visualization components</h2>
 
 <details>
   <summary><b>1. Attributes Catalog</b> </summary>
@@ -94,7 +105,27 @@ Following are the attributes used:
 
 
 <details>
-  <summary><b>3. Select Attributes</b> </summary>
+  <summary><b>3. Color Section</b> </summary>
+  
+  <b>Following are the reasons to select the colors</b>
+
+- Economics: Yellow/ orange color to signify money
+  
+- Environment: Cool colors to signify the nature
+
+- Behavioral factors: Dark colors
+  
+- Demographics: Little colors to show bar chart difference
+
+- Health care: Green colors for health care
+  
+- Health: Red colors 
+
+</details>
+
+
+<details>
+  <summary><b>4. Select Attributes</b> </summary>
   <b>Drop downs to select the attributes</b>
 
 <img width="1135" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/ce02fe2a-b0d8-422e-9a0a-1434340962a5">
@@ -103,7 +134,7 @@ Following are the attributes used:
 
 
 <details>
-  <summary><b>4. Comparing Distributions of Counties with Charts</b> </summary>
+  <summary><b>5. Comparing Distributions of Counties with Charts</b> </summary>
   <b>Using Histograms and Bar charts to show the data depending on the selected attribute</b>
 
 <img width="1215" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/6be3575b-f49c-4c62-99e0-546d5913d19c">
@@ -126,7 +157,7 @@ Following are the attributes used:
 
 
 <details>
-  <summary><b>5. Correlation between Selected Attributes with Scatter plot</b> </summary>
+  <summary><b>6. Correlation between Selected Attributes with Scatter plot</b> </summary>
   <b>Using scatter plot to show the relation between the selected attributes</b>
 
 <img width="680" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/c2cfac8b-1fb8-4ef4-ad50-91c39d020406">
@@ -149,7 +180,7 @@ Following are the attributes used:
 
 
 <details>
-  <summary><b>6. Comparing Distributions of Counties with Maps</b> </summary>
+  <summary><b>7. Comparing Distributions of Counties with Maps</b> </summary>
   <b>Using two Side by Side Maps to compare the magnitude of the selected attributes in various USA counties along with a legend bar</b>
 
 <img width="1325" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/067a925f-5e86-4826-a2f0-7566eba6bb4a">
@@ -169,13 +200,13 @@ Following are the attributes used:
 </details>
 
 <details>
-<summary><b>7. Toggle Magnifying Glass</b></summary>
+<summary><b>8. Toggle Magnifying Glass</b></summary>
 <b>The button helps magnify over a particular section of the map to see the counties</b>
 <img width="264" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/d1d8bbe7-5f6c-4c61-8640-d1802fca8ee7">
 </details>
 
 
-**Interesting Findings from the Application**
+<h2>Interesting Findings from the Application</h2>
 
 <details>
 <summary><b>Relation between High school completion and smoking percent</b></summary>
@@ -211,7 +242,7 @@ Following are the attributes used:
 
 
 
-**Application Architecture**
+<h2>Application Architecture</h2>
 
 <details>
 <summary><b>Libraries Used</b></summary>
