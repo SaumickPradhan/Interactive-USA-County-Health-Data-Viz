@@ -185,6 +185,9 @@ For this project, we have pulled the data together into a single file in ./data/
 
 <img width="1325" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/067a925f-5e86-4826-a2f0-7566eba6bb4a">
 
+<img width="710" alt="image" src="https://github.com/SaumickPradhan/Interactive-USA-County-Health-Data-Viz/assets/85262444/9555c323-9094-4cd0-b1ac-ff2595a86e23">
+
+
 <details>
 <summary><b>Details on Demand using Tool Tip</b></summary>
 <b>Hovering over the maps will provide extra information about that data point</b>
