@@ -144,6 +144,7 @@ fetch('data/attributes.json')
 
       updateVisBasedOnAttribute(updateAttribute1, histogramAttri1);
       updateVisBasedOnAttribute(updateAttribute2, histogramAttri2);
+      
       scatterplot.updateVis();
       choropletgAttri1.updateVis();
       choropletgAttri2.updateVis();
@@ -186,8 +187,11 @@ fetch('data/attributes.json')
         }
 
         histogramAttri1.attributeName = selectedAttr;
+        //console.log(histogramAttri1.attributeName);
         scatterplot.attribute1 = selectedAttr;
+        //console.log(scatterplot.attribute1);
         choropletgAttri1.attributeName = selectedAttr;
+        //console.log(choroplethAttri1.attributeName);
   
         newSelection(null);
       };
@@ -200,14 +204,18 @@ fetch('data/attributes.json')
         if (selectedAttr === "urban_rural_status") {
           histogram2Element.style.display = "none";
           barchart2Element.style.display = "block";
+          // Check 
         } else {
           histogram2Element.style.display = "block";
           barchart2Element.style.display = "none";
+          //remove
         }
         histogramAttri2.attributeName = selectedAttr;
-
+        //console.log(histogramAttri2.attributeName);
         scatterplot.attribute2 = selectedAttr;
+        //console.log(scatterplot.attribute2);
         choropletgAttri2.attributeName = selectedAttr;
+        //console.log(choroplethAttri2.attributeName);
   
         newSelection(null);
       };
