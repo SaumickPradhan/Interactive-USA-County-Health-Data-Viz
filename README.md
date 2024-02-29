@@ -15,8 +15,8 @@ We use chart distributions, correlations and spatial distributions to gain a dee
 https://youtu.be/8Fe_6UhcPd0
 
 <h2>Check It Out</h2>
-[https://interactive-usa-county-health-data-viz.vercel.app/](https://interactive-usa-county-health-data-viz.vercel.app/)
 
+[https://interactive-usa-county-health-data-viz.vercel.app/](https://interactive-usa-county-health-data-viz.vercel.app/).
 
 <h2>Getting Started</h2>
 
