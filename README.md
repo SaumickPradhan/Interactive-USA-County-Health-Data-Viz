@@ -12,7 +12,9 @@ We use chart distributions, correlations and spatial distributions to gain a dee
 
 
 <h2>Video Presentation</h2>
-https://youtu.be/8Fe_6UhcPd0
+
+[https://youtu.be/8Fe_6UhcPd0](https://youtu.be/R4DOaYfwUuk)
+
 
 <h2>Check It Out</h2>
 
